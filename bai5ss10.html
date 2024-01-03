@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        form{
+            padding:10px;
+            width: 80%;
+        }
+        .mainbox{
+            display:flex;
+            
+        }
+        article{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 50%;
+            padding:10px;
+        }
+        .text-1{
+            height: 30px;
+            width:100%;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+        .part-1{
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .content{
+            position:absolute;
+            left: 5px;
+            color: grey;
+        }
+        aside{
+            width: 50%;
+            display: flex;
+            flex-direction:column;
+            gap: 10px;
+        }
+        .part-asside1{
+            position: relative;
+        }
+        .asside-text{
+            width: 100%;
+            height: 160px;
+            border:1px solid gray;
+            border-radius: 4px;
+        }
+        .content-asside{
+            color: grey;
+            position: absolute;
+            top: 5px;
+            left: 10px;
+        } 
+        .button{
+            width: 100%;
+            height: 30px;
+            color: white;
+            background-color:cornflowerblue;
+            border: 1px solid gray;
+            border-radius: 4px;
+        } 
+    </style>
+</head>
+<body>
+    <form>
+        <header>
+            <h3>Gửi thông tin liên hệ cho chúng tôi</h3>
+            <p>Bạn hãy điền nội dung tin nhắn vào form dưới đây.Chúng tôi sẽ trả lời bạn sau khi nhận được.</p>
+        </header>
+        <div class="mainbox">
+            <article>
+                <div class="part-1">
+                    <input class="text-1" type="text">
+                    <span class="content">Họ và tên*</span>
+                </div>
+                <div class="part-1">
+                    <input class="text-1" type="text">
+                    <span class="content">Email*</span>
+                </div>
+                <div class="part-1">
+                    <input class="text-1" type="text">
+                    <span class="content">So dien thoai*</span>
+                </div>
+                <div class="part-1">
+                    <input class="text-1" type="text">
+                    <span class="content">Dia chi*</span>
+                </div>
+            </article>
+            <aside>
+                <div class="part-asside1">
+                    <input  class="asside-text" type="text">
+                    <span class="content-asside">Noi dung*</span>
+                </div>
+                <div class="part-aside2">
+                    <input type="button" class="button" value="Gửi">
+                </div>
+            </aside>
+        </div>
+    </form>
+</body>
+</html>

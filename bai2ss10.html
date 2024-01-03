@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainbox{
+            background-color: red;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height:56px;
+            padding-right: 20px;        
+        }
+        .box{
+            list-style-type: none ;
+            color: white;
+            font-size: large;
+        }
+        .box5{
+            display: flex;
+        }
+        .box5 div{
+            display: flex;
+            align-items:center;
+            padding:5px;
+        }
+        img{
+            border-radius: 60%;
+        }
+        .search{
+            position: relative;
+        }
+        #icon{
+            color: black;
+            position:absolute;
+            left:93%;
+        }
+    </style>
+</head>
+<body>
+    <ul class="mainbox">
+        <li class="box">Trang chu</li>
+        <li class="box">
+            <div class="search">
+                <label for="">San pham: </label>
+                <input type="text">
+                <span id="icon"><ion-icon style="font-size:10px;" name="search-outline"></ion-icon></span>
+            </div>         
+            </li>
+        </li>
+        <li class="box">Gioi thieu</li>
+        <li class="box">Lien he</li>
+        <li class="box">Dang ky</li>
+        <li class="box">Dang nhap</li>
+        <li class="box box5">
+            <img src="https://t4.ftcdn.net/jpg/05/49/98/39/360_F_549983970_bRCkYfk0P6PP5fKbMhZMIb07mCJ6esXL.jpg" alt="" width="50px" height="50px">
+            <div>le anh quan
+            <ion-icon name="arrow-down-outline"></ion-icon>
+            </div>
+        </li>
+    </ul>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

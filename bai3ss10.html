@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainbox{
+            position: relative;
+        }
+        .mainbox1{
+            display: flex;
+            position:absolute;
+        }
+        .mainbox2{
+            position:absolute;
+            left:12%;
+            top: 240px;
+        }
+        li{
+            list-style-type: none;
+        }
+        .box1{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+        #b2{
+            flex-direction: column-reverse;
+        }
+        #b4{
+            flex-direction: row-reverse;
+        }
+        .box2{
+            display:flex;
+            gap: 10px;                   
+        }
+        .smallbox{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content:center;       
+            align-items: center;
+            background-color: orangered;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainbox">
+        <div class="mainbox1">
+        <ul class="box1" id="b1">
+            <li class="smallbox">1</li>
+            <li class="smallbox">2</li>
+            <li class="smallbox">3</li>
+            <li class="smallbox">4</li>
+            <li class="smallbox">5</li>
+            <li class="smallbox">6</li>
+            <li class="smallbox">7</li>
+            <li class="smallbox">8</li>
+            <li class="smallbox">9</li>
+            <li class="smallbox">10</li>
+        </ul>
+        <ul class="box1" id="b2">
+            <li class="smallbox">1</li>
+            <li class="smallbox">2</li>
+            <li class="smallbox">3</li>
+            <li class="smallbox">4</li>
+            <li class="smallbox">5</li>
+            <li class="smallbox">6</li>
+            <li class="smallbox">7</li>
+            <li class="smallbox">8</li>
+            <li class="smallbox">9</li>
+            <li class="smallbox">10</li>          
+        </ul>
+        </div>
+        <div class="mainbox2">
+        <ul class="box2" id="b3">
+            <li class="smallbox">1</li>
+            <li class="smallbox">2</li>
+            <li class="smallbox">3</li>
+            <li class="smallbox">4</li>
+            <li class="smallbox">5</li>
+            <li class="smallbox">6</li>
+            <li class="smallbox">7</li>
+            <li class="smallbox">8</li>
+            <li class="smallbox">9</li>
+            <li class="smallbox">10</li>
+        </ul>
+        <ul class="box2" id="b4">
+            <li class="smallbox">1</li>
+            <li class="smallbox">2</li>
+            <li class="smallbox">3</li>
+            <li class="smallbox">4</li>
+            <li class="smallbox">5</li>
+            <li class="smallbox">6</li>
+            <li class="smallbox">7</li>
+            <li class="smallbox">8</li>
+            <li class="smallbox">9</li>
+            <li class="smallbox">10</li>
+        </ul>
+        </div>
+    </div>  
+</body>
+</html>
